@@ -1,7 +1,21 @@
 {
-  "name": "the-storybook",
+  "name": "zalcu-the-storybook",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license":"MIT",
+  "typings":"dist/index.d.ts",
+  "main":"dist/index.js",
+  "repository":{
+    "url":"https://github.com/ARubios/typescript-react-storybook",
+    "type":"git"
+  },
+  "release": {
+    "branches":"main"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -16,7 +30,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "build-storybook",
+    "build": "TODO",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
