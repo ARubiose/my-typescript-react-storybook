@@ -38,5 +38,5 @@ AllCaps.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
     label:'Secondary label',
-    color:'secondary'
+    fontColor:'secondary'
 }

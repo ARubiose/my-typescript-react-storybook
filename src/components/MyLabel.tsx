@@ -22,7 +22,7 @@ interface LabelProps {
      * Watch out if the docstring starts with color the controls of
      * this property became a color picker.
      */
-    color?: string; // 'primary' | 'secondary' | 'tertiary';
+     fontColor?: string; // 'primary' | 'secondary' | 'tertiary';
 }
 
 /**
@@ -32,10 +32,10 @@ export const MyLabel = ({
     label = 'No label',
     size = 'normal',
     allCaps = false,
-    color = 'primary',
+    fontColor = 'primary',
 }: LabelProps) => {
     return (
-        <span className={`${size}`} style={{ color: `${color}` }}>
+        <span className={`${size}`} style={{ color: `${fontColor}` }}>
             {allCaps ? label.toUpperCase() : label}
         </span>
     );
