@@ -23,6 +23,10 @@ export interface LabelProps {
      * this property became a color picker.
      */
     fontColor?: string; // 'primary' | 'secondary' | 'tertiary';
+    /**
+     * Color of the label border
+     */
+    borderColor?:string
 }
 
 /**
@@ -33,9 +37,14 @@ export const MyLabel = ({
     size = 'normal',
     allCaps = false,
     fontColor = 'primary',
+    borderColor = undefined
 }: LabelProps) => {
     return (
-        <span className={`${size}`} style={{ color: `${fontColor}` }}>
+        <span 
+            className={`${size} ${ borderColor ? 'border' : ''}`} 
+            style={{ 
+                color: `${fontColor}`,
+                borderColor:`${borderColor}` }}>
             {allCaps ? label.toUpperCase() : label}
         </span>
     );

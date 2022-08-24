@@ -40,3 +40,12 @@ Secondary.args = {
     label:'Secondary label',
     fontColor:'secondary'
 }
+/**
+ * A label with other color
+*/
+export const Strong = Template.bind({});
+Secondary.args = {
+    label:'Secondary label',
+    fontColor:'secondary',
+    borderColor:'#000000'
+}

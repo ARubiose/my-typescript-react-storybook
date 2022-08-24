@@ -25,3 +25,7 @@
 .text-tertiary {
     color: #ee6c4d;
 }
+.border {
+    border-style: solid;
+    padding: 1rem;
+}
