@@ -22,7 +22,7 @@ export interface LabelProps {
      * Watch out if the docstring starts with color the controls of
      * this property became a color picker.
      */
-     fontColor?: string; // 'primary' | 'secondary' | 'tertiary';
+    fontColor?: string; // 'primary' | 'secondary' | 'tertiary';
 }
 
 /**
@@ -40,3 +40,5 @@ export const MyLabel = ({
         </span>
     );
 };
+
+export default MyLabel;
