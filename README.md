@@ -57,4 +57,5 @@ Full documentation --> [https://docs.github.com/en/actions](https://docs.github.
 2. Configure your npm token and [github token](https://docs.github.com/en/actions/security-guides/automatic-token-authentication) for Github Actions.
 Create a new repository secret for your tokens.
 3. Create a new [workflow](https://docs.github.com/en/actions/using-workflows/about-workflows).
+4. Check the differences in the `main.yml` file.
     
