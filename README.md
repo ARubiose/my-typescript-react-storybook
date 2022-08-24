@@ -21,10 +21,13 @@ You can also build a static version of Storybook (that could be deployed to some
 
 #### typescript + rimraf + copyfiles - building package
 * [rimraf](https://www.npmjs.com/package/rimraf) - 
-* [copyfiles](https://www.npmjs.com/package/copyfiles) - 
+* [copyfiles](https://www.npmjs.com/package/copyfiles) -
+
+To create the `dist` folder with all the required files run:
 ```
 npm run build
 ```
+
 <!-- #### Rollup - building package
 * `npm run build:dev` - builds a package in development mode (i.e. no minifying and uglyfying)
 * `npm run build:dev-w` - same as above, but is watching changes and rebuilds immediately after one is found
@@ -39,8 +42,19 @@ The instance of Storybook housed in this project is additionally preconfigured w
 * `info` plugin - every component gets automatically created documentation page with props info etc. You can also include your own README
 * `knobs` plugin - lets you easily configure the component before injecting it into your application -->
 
+
 ### Semantic versioning
+**semantic-release** automates the whole package release workflow including: determining the next version number, generating the release notes, and publishing the package. See full [documentation](https://github.com/semantic-release/semantic-release#readme)
 ```
 npm i semantic-release 
 ```
-[Semantic-release](https://www.npmjs.com/package/@semantic-release/npm)
+[Semantic-release npm](https://www.npmjs.com/package/@semantic-release/npm)
+
+### GitHub Actions
+Full documentation --> [https://docs.github.com/en/actions](https://docs.github.com/en/actions)
+
+1. Get yourself a [npm token](https://docs.npmjs.com/about-access-tokens) and a [Github token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+2. Configure your npm token and [github token](https://docs.github.com/en/actions/security-guides/automatic-token-authentication) for Github Actions.
+Create a new repository secret for your tokens.
+3. Create a new [workflow](https://docs.github.com/en/actions/using-workflows/about-workflows).
+    
