@@ -1,8 +1,5 @@
-// Import the required styles.
+/// <reference types="react" />
 import './mylabel.css';
-
-// Define the props interface. It must be exported.
-// Do not forget to comment on the properties for documentation!
 export interface LabelProps {
     /**
      * This is the definition of the property label.
@@ -22,21 +19,9 @@ export interface LabelProps {
      * Watch out if the docstring starts with color the controls of
      * this property became a color picker.
      */
-     fontColor?: string; // 'primary' | 'secondary' | 'tertiary';
+    fontColor?: string;
 }
-
 /**
  * Implement the primary UI component for user interaction
  */
-export const MyLabel = ({
-    label = 'No label',
-    size = 'normal',
-    allCaps = false,
-    fontColor = 'primary',
-}: LabelProps) => {
-    return (
-        <span className={`${size}`} style={{ color: `${fontColor}` }}>
-            {allCaps ? label.toUpperCase() : label}
-        </span>
-    );
-};
+export declare const MyLabel: ({ label, size, allCaps, fontColor, }: LabelProps) => JSX.Element;
