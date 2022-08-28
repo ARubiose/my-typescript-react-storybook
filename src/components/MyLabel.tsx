@@ -31,8 +31,7 @@ export interface LabelProps {
 
 /**
  * Implement the primary UI component for user interaction
- */
-export const MyLabel = ({
+ */export const MyLabel = ({
     label = 'No label',
     size = 'normal',
     allCaps = false,
@@ -44,7 +43,8 @@ export const MyLabel = ({
             className={`${size} ${ borderColor ? 'border' : ''}`} 
             style={{ 
                 color: `${fontColor}`,
-                borderColor:`${borderColor}` }}>
+                borderColor:`${borderColor}`}}
+                >
             {allCaps ? label.toUpperCase() : label}
         </span>
     );

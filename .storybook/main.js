@@ -13,4 +13,5 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
+  // staticDirs: ['../assets'],   Not working - 99% building...
 }
