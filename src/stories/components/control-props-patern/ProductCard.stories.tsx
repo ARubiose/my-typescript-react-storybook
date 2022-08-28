@@ -2,7 +2,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import ProductCard from '../../../components/control-props-patterns/components';
-
 // #1 - Import the component
 
 // #2 - Default export of the tested component.
@@ -22,6 +21,7 @@ const Template: ComponentStory<typeof ProductCard> = (args) => (
  * This is a basic label with customized args
  */
 export const Basic = Template.bind({});
+
 const product = {
     id: "1",
     title: "Coffe Mug - Card",
