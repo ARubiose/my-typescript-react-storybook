@@ -1,0 +1,45 @@
+/* Not a module */
+.bg-dark {
+    background-color: rgb(56, 56, 56);
+}
+
+.color-white {
+    color: white;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Custom image */
+.custom-image {
+    border-radius: 20px;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+}
+
+/* Custom buttons */
+.custom-buttons button {
+    color: white;
+    border-color: white;
+}
+.custom-buttons div {
+    color: white;
+    border-color: white;
+}
+
+.shopping-cart {
+    position: fixed;
+    top: 10px;
+    right: 5px;
+}
+
+.hidden-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.hidden-buttons button {
+    display:none;
+}
